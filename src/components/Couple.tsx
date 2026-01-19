@@ -9,9 +9,9 @@ export default function Couple() {
       {/* Judul Seksi */}
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }} // Animasi jalan saat discroll sampai sini
+        whileInView={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }} // Animasi cuma sekali jalan
+        viewport={{ once: true }} 
         className="mb-12"
       >
         <p className="font-heading text-gold text-xl mb-2">Mempelai</p>
@@ -34,7 +34,7 @@ export default function Couple() {
         >
           <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-gold p-1 overflow-hidden shadow-xl">
             <Image
-              src="/images/cowok.jpg" // Pastikan file ada
+              src="/images/cowok.jpg" 
               alt="Mempelai Pria"
               fill
               className="object-cover rounded-full"
@@ -57,7 +57,7 @@ export default function Couple() {
         >
           <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-gold p-1 overflow-hidden shadow-xl">
             <Image
-              src="/images/cewek.jpg" // Pastikan file ada
+              src="/images/cewek.jpg" 
               alt="Mempelai Wanita"
               fill
               className="object-cover rounded-full"
