@@ -25,7 +25,7 @@ export default function AudioPlayer() {
         onClick={togglePlay}
         whileTap={{ scale: 0.9 }}
         className={`w-12 h-12 rounded-full flex items-center justify-center shadow-xl border-2 border-white transition-all duration-500 ${
-          isPlaying ? "bg-gold animate-spin-slow" : "bg-gray-800"
+          isPlaying ? "bg-red animate-spin-slow" : "bg-gray-800"
         }`}
         style={{ animationDuration: "3s" }}
       >
