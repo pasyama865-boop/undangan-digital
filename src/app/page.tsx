@@ -25,7 +25,7 @@ export default async function Home(props: Props) {
       <AudioPlayer />
       
       <footer className="py-8 text-center text-gray-500 text-xs bg-dark">
-        <p>Created with Muhamad ali pasha</p>
+        <p> Muhamad ali pasha</p>
       </footer>
     </main>
   );
