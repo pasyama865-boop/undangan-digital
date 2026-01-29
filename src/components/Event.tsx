@@ -29,7 +29,7 @@ export default function Event() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors"
+            className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors"
           >
             <h3 className="font-heading text-2xl mb-4">Akad Nikah</h3>
             <div className="space-y-4 font-body text-gray-300">
@@ -54,7 +54,7 @@ export default function Event() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors"
+            className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-gold/50 transition-colors"
           >
             <h3 className="font-heading text-2xl mb-4">Resepsi</h3>
             <div className="space-y-4 font-body text-gray-300">
@@ -87,7 +87,7 @@ export default function Event() {
           {/* Container Responsif */}
           <div className="relative w-70 h-64 sm:h-72 md:h-96 rounded-2xl overflow-hidden border-4 border-white/10 shadow-2xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.500147883807!2d107.29204030000001!3d-6.3291789000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69762a188e475f%3A0x4b0d4144be30e5fd!2sMercure%20Hotel%20Karawang!5e0!3m2!1sid!2sid!4v1768845709334!5m2!1sid!2sid" /* URL DARI KAMU */
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.500147883807!2d107.29204030000001!3d-6.3291789000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69762a188e475f%3A0x4b0d4144be30e5fd!2sMercure%20Hotel%20Karawang!5e0!3m2!1sid!2sid!4v1768845709334!5m2!1sid!2sid"
               width="100%"
               height="100%"
               style={{ border: 0 }}
