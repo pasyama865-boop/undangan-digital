@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { submitRsvp } from "@/app/actions"; // Import fungsi server tadi
+import { submitRsvp } from "@/app/actions"; 
 import { motion } from "framer-motion";
 
 export default function Rsvp() {
@@ -23,7 +23,7 @@ export default function Rsvp() {
   }
 
   return (
-    <section className="py-20 px-6 bg-white text-dark mb-20">
+    <section className="py-20 px-6 bg-white text-dark ">
       <div className="max-w-md mx-auto bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
         
         <h2 className="font-heading text-3xl text-center mb-8 text-gold">RSVP & Doa</h2>

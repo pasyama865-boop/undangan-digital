@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Wedding of Romeo & Juliet",
     description: "Undangan Pernikahan Digital",
-    url: "https://undangan-digital-kamu.vercel.app", // Ganti dengan link Vercel aslimu nanti
+    url: "https://undangan-digital-kamu.vercel.app", 
     siteName: "Romeo & Juliet Wedding",
     images: [
       {
-        url: "/images/thumbnail.jpg", // Pastikan file ini ada di public/images
+        url: "/images/thumbnail.jpg", 
         width: 1200,
         height: 630,
         alt: "Romeo & Juliet Wedding Preview",
