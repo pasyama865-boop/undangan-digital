@@ -79,15 +79,15 @@ export default function Event() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className="w-full max-w-4xl mx-auto mt-12"
+          className="relative z-20 w-70 max-w-4xl mx-auto mt-12"
         >
           {/* Container Responsif */}
-          <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden border-4 border-white/10 shadow-2xl">
+          <div className="relative w-70 h-64 md:h-96 rounded-2xl overflow-hidden border-4 border-white/10 shadow-2xl">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.500147883807!2d107.29204030000001!3d-6.3291789000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69762a188e475f%3A0x4b0d4144be30e5fd!2sMercure%20Hotel%20Karawang!5e0!3m2!1sid!2sid!4v1768845709334!5m2!1sid!2sid" /* URL DARI KAMU */
               width="100%"
               height="100%"
-              style={{ border: 0 }} /* Syntax React */
+              style={{ border: 0 }} 
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

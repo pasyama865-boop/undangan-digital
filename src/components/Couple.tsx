@@ -8,7 +8,7 @@ export default function Couple() {
       {/* Background: tampil utuh tanpa zoom (object-contain = tidak crop/zoom) */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/bg-couple.jpg"
+          src="/images/bg-duo.jpg"
           alt="Background Mempelai"
           fill
           sizes="100vw"
