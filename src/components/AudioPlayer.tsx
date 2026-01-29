@@ -1,10 +1,10 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Disc, Music } from "lucide-react"; // Ikon
 import { motion } from "framer-motion";
 
 export default function AudioPlayer() {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const togglePlay = () => {
@@ -17,6 +17,21 @@ export default function AudioPlayer() {
       setIsPlaying(!isPlaying);
     }
   };
+
+  // Play music automatically when component mounts
+  useEffect(() => {
+    if (audioRef.current && isPlaying) {
+      const playPromise = audioRef.current.play();
+      // Handle autoplay rejection in some browsers
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          console.log("Autoplay failed, user interaction required:", error);
+          // Optionally reset state to paused if autoplay fails
+          setIsPlaying(false);
+        });
+      }
+    }
+  }, [isPlaying]);
 
   return (
     <div className="fixed bottom-6 right-6 z-50">

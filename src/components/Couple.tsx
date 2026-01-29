@@ -28,15 +28,15 @@ export default function Couple() {
         viewport={{ once: true }} 
         className="mb-12"
       >
-        <p className="font-heading text-gold text-xl mb-2">Mempelai</p>
-        <h2 className="font-heading text-3xl font-bold">Groom & Bride</h2>
-        <p className="font-body text-gray-300 text-2xl mt-4 max-w-lg mx-auto">
+        <p className="font-heading text-gold text-xl sm:text-2xl mb-2">Mempelai</p>
+        <h2 className="font-heading text-3xl sm:text-4xl font-bold">Groom & Bride</h2>
+        <p className="font-body text-gray-300 text-2xl sm:text-3xl mt-4 max-w-lg mx-auto">
           Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami:
         </p>
       </motion.div>
 
       {/* Grid Foto Mempelai */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 sm:gap-12 md:gap-20">
         
         {/* Pria */}
         <motion.div 
@@ -46,7 +46,7 @@ export default function Couple() {
           viewport={{ once: true }}
           className="flex flex-col items-center"
         >
-          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-gold p-1 overflow-hidden shadow-xl">
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-4 border-gold p-1 overflow-hidden shadow-xl">
             <Image
               src="/images/cowok.jpg" 
               alt="Mempelai Pria"
@@ -54,8 +54,8 @@ export default function Couple() {
               className="object-cover rounded-full"
             />
           </div>
-          <h3 className="font-heading text-gray-400 text-3xl font-bold mt-6">Romeo Montague</h3>
-          <p className="font-body text-gold text-2xl">Putra Bpk. Montague & Ibu Montague</p>
+          <h3 className="font-heading text-gray-400 text-3xl sm:text-4xl font-bold mt-6">Romeo Montague</h3>
+          <p className="font-body text-gold text-2xl sm:text-3xl">Putra Bpk. Montague & Ibu Montague</p>
         </motion.div>
 
         {/* Simbol '&' di tengah */}
@@ -69,7 +69,7 @@ export default function Couple() {
           viewport={{ once: true }}
           className="flex flex-col items-center"
         >
-          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-gold p-1 overflow-hidden shadow-xl">
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-4 border-gold p-1 overflow-hidden shadow-xl">
             <Image
               src="/images/cewek.jpg" 
               alt="Mempelai Wanita"
@@ -77,8 +77,8 @@ export default function Couple() {
               className="object-cover rounded-full"
             />
           </div>
-          <h3 className="font-heading text-gray-400 text-3xl font-bold mt-6">Juliet Capulet</h3>
-          <p className="font-body text-gold text-2xl">Putri Bpk. Capulet & Ibu Capulet</p>
+          <h3 className="font-heading text-gray-400 text-3xl sm:text-4xl font-bold mt-6">Juliet Capulet</h3>
+          <p className="font-body text-gold text-2xl sm:text-3xl">Putri Bpk. Capulet & Ibu Capulet</p>
         </motion.div>
 
       </div>

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin } from "lucide-react";
+import LiveCountdown from "./LiveCountdown";
 
 export default function Event() {
   return (
@@ -10,17 +11,17 @@ export default function Event() {
 
       <div className="relative z-10 max-w-4xl mx-auto text-center space-y-12">
         
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="font-heading text-3xl text-gold"
+          className="font-heading text-3xl sm:text-4xl text-gold"
         >
           Waktu & Tempat
         </motion.h2>
 
         {/* Container Kartu Acara */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-8">
           
           {/* Kartu Akad */}
           <motion.div 
@@ -73,6 +74,8 @@ export default function Event() {
           </motion.div>
         </div>
 
+        <LiveCountdown />
+
         {/* --- AREA MAPS GOOGLE (YANG BARU KITA PASANG) --- */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -82,17 +85,29 @@ export default function Event() {
           className="relative z-20 w-70 max-w-4xl mx-auto mt-12"
         >
           {/* Container Responsif */}
-          <div className="relative w-70 h-64 md:h-96 rounded-2xl overflow-hidden border-4 border-white/10 shadow-2xl">
+          <div className="relative w-70 h-64 sm:h-72 md:h-96 rounded-2xl overflow-hidden border-4 border-white/10 shadow-2xl">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.500147883807!2d107.29204030000001!3d-6.3291789000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69762a188e475f%3A0x4b0d4144be30e5fd!2sMercure%20Hotel%20Karawang!5e0!3m2!1sid!2sid!4v1768845709334!5m2!1sid!2sid" /* URL DARI KAMU */
               width="100%"
               height="100%"
-              style={{ border: 0 }} 
+              style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="absolute inset-0"
             ></iframe>
+            <noscript>
+              <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+                <a
+                  href="https://maps.app.goo.gl/8E7xHbCiSqAmJj16A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-center text-blue-600 underline"
+                >
+                  Buka peta di Google Maps
+                </a>
+              </div>
+            </noscript>
           </div>
         </motion.div>
 

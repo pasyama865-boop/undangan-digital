@@ -30,7 +30,7 @@ export default async function GuestList() {
   return (
     <section className="px-6 pt-8 pb-20 bg-white text-dark">
       <div className="max-w-md mx-auto">
-        <h3 className="font-heading text-xl text-center mb-6 text-gold">
+        <h3 className="font-heading text-xl sm:text-2xl text-center mb-6 text-gold">
           {wishes?.length} Ucapan & Doa
         </h3>
 
@@ -38,7 +38,7 @@ export default async function GuestList() {
         <div className="space-y-4 max-h-500px overflow-y-auto pr-2 custom-scrollbar">
           
           {wishes?.length === 0 ? (
-            <p className="text-center text-gray-400 italic text-sm">
+            <p className="text-center text-gray-400 italic text-sm sm:text-base">
               Belum ada ucapan. Jadilah yang pertama mengirim doa!
             </p>
           ) : (
@@ -52,8 +52,8 @@ export default async function GuestList() {
                     <User size={16} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm text-gray-800">{item.name}</h4>
-                    <span className="text-[10px] text-gray-400 flex items-center gap-1">
+                    <h4 className="font-bold text-sm sm:text-base text-gray-800">{item.name}</h4>
+                    <span className="text-xs sm:text-sm text-gray-400 flex items-center gap-1">
                       <Clock size={10} /> {formatDate(item.created_at)} • 
                       <span className={`font-bold ${item.attendance === 'Hadir' ? 'text-green-600' : 'text-red-500'}`}>
                         {item.attendance}
@@ -61,7 +61,7 @@ export default async function GuestList() {
                     </span>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 leading-relaxed font-body italic">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-body italic">
                   {item.message}
                 </p>
               </div>

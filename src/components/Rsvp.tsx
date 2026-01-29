@@ -26,7 +26,7 @@ export default function Rsvp() {
     <section className="py-20 px-6 bg-white text-dark ">
       <div className="max-w-md mx-auto bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
         
-        <h2 className="font-heading text-3xl text-center mb-8 text-gold">RSVP & Doa</h2>
+        <h2 className="font-heading text-3xl sm:text-4xl text-center mb-8 text-gold">RSVP & Doa</h2>
 
         {status === "success" ? (
           <motion.div 
@@ -35,10 +35,10 @@ export default function Rsvp() {
             className="text-center p-6 bg-green-100 text-green-800 rounded-xl"
           >
             <p className="font-bold">✨ {feedback}</p>
-            <p className="text-sm mt-2">Sampai jumpa di hari bahagia kami!</p>
+            <p className="text-sm sm:text-base mt-2">Sampai jumpa di hari bahagia kami!</p>
             <button 
               onClick={() => setStatus("idle")} 
-              className="mt-4 text-xs underline text-green-600"
+              className="mt-4 text-xs sm:text-sm underline text-green-600"
             >
               Kirim lagi
             </button>
@@ -47,22 +47,22 @@ export default function Rsvp() {
           <form action={handleSubmit} className="space-y-4">
             {/* Input Nama */}
             <div>
-              <label className="block text-sm font-bold mb-2">Nama Anda</label>
+              <label className="block text-sm sm:text-base font-bold mb-2">Nama Anda</label>
               <input 
                 name="nama"
                 type="text" 
                 required
                 placeholder="Masukkan nama..."
-                className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
+                className="w-full p-3 sm:p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
               />
             </div>
 
             {/* Input Kehadiran */}
             <div>
-              <label className="block text-sm font-bold mb-2">Konfirmasi Kehadiran</label>
+              <label className="block text-sm sm:text-base font-bold mb-2">Konfirmasi Kehadiran</label>
               <select 
                 name="attendance"
-                className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold bg-white"
+                className="w-full p-3 sm:p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold bg-white"
               >
                 <option value="Hadir">Saya akan hadir</option>
                 <option value="Tidak Hadir">Maaf, tidak bisa hadir</option>
@@ -72,12 +72,12 @@ export default function Rsvp() {
 
             {/* Input Pesan */}
             <div>
-              <label className="block text-sm font-bold mb-2">Ucapan & Doa</label>
+              <label className="block text-sm sm:text-base font-bold mb-2">Ucapan & Doa</label>
               <textarea 
                 name="message"
                 rows={3}
                 placeholder="Tulis ucapan selamat..."
-                className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
+                className="w-full p-3 sm:p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
               ></textarea>
             </div>
 
@@ -85,7 +85,7 @@ export default function Rsvp() {
             <button 
               type="submit" 
               disabled={status === "loading"}
-              className="w-full py-3 bg-gold text-white font-bold rounded-lg hover:bg-yellow-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full py-3 sm:py-4 bg-gold text-white font-bold rounded-lg hover:bg-yellow-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {status === "loading" ? "Mengirim..." : "Kirim Konfirmasi"}
             </button>

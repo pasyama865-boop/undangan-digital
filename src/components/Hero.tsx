@@ -35,8 +35,8 @@ export default function Hero({ guestName = "Tamu Undangan" }: { guestName?: stri
         <motion.h1
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.5 }} 
-          className="font-heading text-5xl md:text-7xl text-gold drop-shadow-lg"
+          transition={{ duration: 1, delay: 0.5 }}
+          className="font-heading text-4xl sm:text-6xl md:text-7xl text-gold drop-shadow-lg"
         >
           Romeo <br /> <span className="text-3xl">&</span> Juliet
         </motion.h1>
@@ -49,7 +49,7 @@ export default function Hero({ guestName = "Tamu Undangan" }: { guestName?: stri
           className="mt-8 bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20"
         >
           <p className="font-body text-xs mb-2">Kepada Yth:</p>
-          <h2 className="font-heading text-xl font-bold">{guestName}</h2>
+          <h2 className="font-heading text-xl sm:text-2xl font-bold">{guestName}</h2>
         </motion.div>
 
       </div>
